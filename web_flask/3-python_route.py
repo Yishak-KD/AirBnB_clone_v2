@@ -20,10 +20,11 @@ def display_c(text):
     return "C " + new
 
 
+@app.route('/python', strict_slashes=False)
 @app.route('/python/<text>', strict_slashes=False)
-def display_python(text):
+def display_python(text="is cool"):
     new = text.replace("_", " ")
-    return "Python "
+    return "Python " + new
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
