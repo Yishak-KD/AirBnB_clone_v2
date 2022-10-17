@@ -22,7 +22,7 @@ def display_c(text):
 
 @app.route('/number/<int:n>', strict_slashes=False)
 def display_num(n):
-    return n+ " is a number"
+    return n + " is a number"
 
 
 if __name__ == "__main__":
